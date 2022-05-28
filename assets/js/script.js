@@ -20,7 +20,7 @@ const userChoice = (choice) => {
 const computerChoice = () => {
     let choices = ['rock', 'paper', 'scissors']
     let randomChoice = choices[Math.floor(Math.random() * choices.length)];
-    
+
     switch (randomChoice) {
         case 'rock':
             document.getElementById("computer-choice").src = "/assets/images/rock.png";
@@ -31,4 +31,10 @@ const computerChoice = () => {
         case 'scissors':
             document.getElementById("computer-choice").src = "/assets/images/scissors.png";
     };
+}
+
+const whoWins = (userChoice, computerChoice) => {
+    if (userChoice === computerChoice) {
+        console.log('You draw')
+    }
 }
