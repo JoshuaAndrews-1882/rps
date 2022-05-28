@@ -26,3 +26,20 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* game area */
+
+.game-area {
+    background-color: yellow;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.choice {
+    padding-top: 20px;
+}
+
+.choice > img {
+    height: 100px;
+    width: 100px;
+}
