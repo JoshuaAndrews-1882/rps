@@ -18,6 +18,7 @@
 .score-area {
     align-items: center;
     background-color: blue;
+    padding-bottom: 20px;
     padding-top: 10px;
     text-align: center;
 }
@@ -49,6 +50,7 @@
     background-color: yellow;
     padding-top: 10px;
     text-align: center;
+    visibility: hidden;
 }
 
 .result p {
@@ -95,7 +97,7 @@
         width: 150px;
     }
 
-    .compare-mediaquery {
+    .both-selections {
         display: flex;
         justify-content: space-around;
         padding-top: 20px;
@@ -109,6 +111,10 @@
     .computer-image > img {
         height: 175px;
         width: 175px;
+    }
+
+    .both-selections p {
+        padding-bottom: 50px;
     }
 }
 
