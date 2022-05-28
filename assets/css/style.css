@@ -44,6 +44,36 @@
     width: 100px;
 }
 
+/* compare results */
+.compare {
+    background-color: yellow;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.result p {
+    padding-top: 10px;
+}
+
+.player-image > img {
+    height: 125px;
+    width: 125px;
+}
+
+.computer-image > img {
+    height: 125px;
+    width: 125px;
+}
+
+.player-selection p {
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.computer-selection p {
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
 
 /* media quieries */
 
@@ -67,18 +97,6 @@
 }
 
 @media screen and (min-width:900px) {
-    .score-area {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 30px;
-    }
-    
-    .game-area {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 30px;
-    }
-    
     .choice > img {
         height: 200px;
         width: 200px;
