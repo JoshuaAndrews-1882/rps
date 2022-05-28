@@ -43,3 +43,44 @@
     height: 100px;
     width: 100px;
 }
+
+
+/* media quieries */
+
+@media screen and (min-width:630px) {
+    .score-area {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    
+    .game-area {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    
+    .choice > img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .score-area {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+    
+    .game-area {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+    
+    .choice > img {
+        height: 200px;
+        width: 200px;
+    }
+}
