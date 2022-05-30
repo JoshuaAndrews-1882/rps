@@ -1,6 +1,6 @@
-const userChoice = (choice) => {
+let userChoice = (choice) => {
     let choices = document.querySelector(".game-area");
-    choices.style.display = "none";   
+    choices.style.display = "none";  
     let compare = document.querySelector(".compare");
     compare.style.visibility = "visible";
 
@@ -8,14 +8,13 @@ const userChoice = (choice) => {
         case 'rock':
             document.getElementById("player-choice").src = "/assets/images/rock.png";
         case 'paper':
-            document.getElementById("player-choice").src = "/assets/images/paper.png";
+             document.getElementById("player-choice").src = "/assets/images/paper.png";
         case 'scissors':
             document.getElementById("player-choice").src = "/assets/images/scissors.png";
 
-            computerChoice();
+            console.log(computerChoice());
 };
 }
-
 
 const computerChoice = () => {
     let choices = ['rock', 'paper', 'scissors']
@@ -24,11 +23,12 @@ const computerChoice = () => {
     switch (randomChoice) {
         case 'rock':
             document.getElementById("computer-choice").src = "/assets/images/rock.png";
-            break;
+            return 'rock';
         case 'paper':
             document.getElementById("computer-choice").src = "/assets/images/paper.png";
-            break;
+            return 'paper';
         case 'scissors':
             document.getElementById("computer-choice").src = "/assets/images/scissors.png";
+            return 'scissors';
     };
 }
