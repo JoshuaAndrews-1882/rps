@@ -13,7 +13,7 @@ const userChoice = (choice) => {
             document.getElementById("player-choice").src = "/assets/images/scissors.png";
 
             computerChoice();
-};
+}
 }
 
 
@@ -33,8 +33,28 @@ const computerChoice = () => {
     };
 }
 
-const whoWins = (userChoice, computerChoice) => {
+/*
+const compareChoices = (userChoice, computerChoice) => {
     if (userChoice === computerChoice) {
-        console.log('You draw')
+        console.log("It's a draw");
+    }
+    if (userChoice === 'rock' && computerChoice === 'paper') {
+        console.log("You lose");
+    }
+    if (userChoice === 'rock' && computerChoice === 'scissors') {
+        console.log("You win");
+    }
+    if (userChoice === 'paper' && computerChoice === 'rock') {
+        console.log("You win");
+    }
+    if (userChoice === 'paper' && computerChoice === 'scissors') {
+        console.log("You lose");
+    }
+    if (userChoice === 'scissors' && computerChoice === 'rock') {
+        console.log("You lose");
+    }
+    if (userChoice === 'scissors' && computerChoice === 'paper') {
+        console.log("You win");
     }
 }
+*/
