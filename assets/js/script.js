@@ -35,9 +35,6 @@ const computerChoice = () => {
 
 /*
 const compareChoices = (userChoice, computerChoice) => {
-    if (userChoice === computerChoice) {
-        console.log("It's a draw");
-    }
     if (userChoice === 'rock' && computerChoice === 'paper') {
         console.log("You lose");
     }
@@ -55,6 +52,9 @@ const compareChoices = (userChoice, computerChoice) => {
     }
     if (userChoice === 'scissors' && computerChoice === 'paper') {
         console.log("You win");
+    }
+    else if (userChoice === computerChoice) {
+        console.log("It's a draw");
     }
 }
 */
