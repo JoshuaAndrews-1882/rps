@@ -1,4 +1,4 @@
-let userChoice = (choice) => {
+const userChoice = (choice) => {
     let choices = document.querySelector(".game-area");
     choices.style.display = "none";  
     let compare = document.querySelector(".compare");
@@ -6,13 +6,11 @@ let userChoice = (choice) => {
 
     switch (choice) {
         case 'rock':
-            document.getElementById("player-choice").src = "/assets/images/rock.png";
+            return document.getElementById("player-choice").src = "/assets/images/rock.png";
         case 'paper':
-             document.getElementById("player-choice").src = "/assets/images/paper.png";
+            return document.getElementById("player-choice").src = "/assets/images/paper.png";
         case 'scissors':
-            document.getElementById("player-choice").src = "/assets/images/scissors.png";
-
-            console.log(computerChoice());
+            return document.getElementById("player-choice").src = "/assets/images/scissors.png";
 };
 }
 
