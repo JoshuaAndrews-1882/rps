@@ -4,13 +4,18 @@ const userChoice = (choice) => {
     let compare = document.querySelector(".compare");
     compare.style.visibility = "visible";
 
+    console.log(choice);
+
     switch (choice) {
         case 'rock':
-            return document.getElementById("player-choice").src = "/assets/images/rock.png";
+            document.getElementById("player-choice").src = "/assets/images/rock.png";
+            return 'rock'
         case 'paper':
-            return document.getElementById("player-choice").src = "/assets/images/paper.png";
+            document.getElementById("player-choice").src = "/assets/images/paper.png";
+            return 'paper'
         case 'scissors':
-            return document.getElementById("player-choice").src = "/assets/images/scissors.png";
+            document.getElementById("player-choice").src = "/assets/images/scissors.png";
+            return 'scissors'
 };
 }
 
