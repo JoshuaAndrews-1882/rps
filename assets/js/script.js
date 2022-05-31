@@ -5,6 +5,7 @@ const userChoice = (choice) => {
     compare.style.visibility = "visible";
 
     console.log(choice);
+    console.log(computerChoice())
 
     switch (choice) {
         case 'rock':
@@ -16,7 +17,7 @@ const userChoice = (choice) => {
         case 'scissors':
             document.getElementById("player-choice").src = "/assets/images/scissors.png";
             return 'scissors'
-};
+    }
 }
 
 const computerChoice = () => {
